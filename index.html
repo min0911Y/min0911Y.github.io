@@ -1,5 +1,48 @@
 <html>
-  <body>
-    <h1>hello, world</h1>
-  </body>
+    <head>
+        <title>DogheadOS web</title>
+    </head>
+    <style>
+        p{
+            color:blue;
+            font-size: 20px;
+            text-align: center;
+        }
+        a{
+            color:darkseagreen;
+            font-size: 25px;
+        }
+        button{
+            color: brown;
+            font-size: 20px;
+        }
+        input{
+            font-size: 20px;
+        }
+    </style>
+    <script>
+        function show(){
+            var inp = myform.inputbox.value;
+            if(inp == "好"){
+                alert("感谢支持!!!!!!小弟记住了");
+
+            }else if(inp == "不好"){
+                alert("好吧 感谢评价");
+            }else{
+                alert("看不懂呢!");
+            }
+        }
+    </script>
+    <body>
+        <form name="myform">
+        <p style="font-size:35px; text-align: center;">DogheadOS 32bits版本导航页</p>
+        <a href="https://github.com/min0911Y/DogheadOS-IA32">访问仓库</a>
+        <a href="https://118.31.248.215/">系统论坛</a>
+        
+        <br/>
+        <input type="text" id="inputbox" name="box" value="系统好吗?"/>
+        <button onclick="show()">点我</button>
+    </form>
+    </body>
+    
 </html>
